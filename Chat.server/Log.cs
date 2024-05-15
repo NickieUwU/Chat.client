@@ -13,5 +13,10 @@ namespace Chat.server
         {
             File.AppendAllText("chatlog.txt", DateTime.Now.ToString() + "|LOGIN|" + message + "\r\n");
         }
+
+        public static void Message(string message)
+        {
+            File.AppendAllText("chatlog.txt", DateTime.Now.ToString() + "|LOGIN|" + message + "\r\n");
+        }
     }
 }
