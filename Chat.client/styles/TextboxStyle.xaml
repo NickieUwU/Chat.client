@@ -1,0 +1,33 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style x:Key="txtUsername" TargetType="{x:Type TextBox}">
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Padding" Value="10,4"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            Background="{TemplateBinding Background}"
+                            SnapsToDevicePixels="True">
+                        <Grid>
+                            <TextBlock x:Name="PlaceholderText" Text="Username" HorizontalAlignment="Center" 
+                                       Foreground="Gray"
+                                       Visibility="Collapsed"/>
+                            <ScrollViewer x:Name="PART_ContentHost"
+                                          VerticalAlignment="Center"/>
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Text" Value="">
+                            <Setter TargetName="PlaceholderText" Property="Visibility" Value="Visible"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>
