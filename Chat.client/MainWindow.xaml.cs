@@ -24,6 +24,7 @@ namespace Chat.client
         public MainWindow()
         {
             InitializeComponent();
+            MakeLogFile();
         }
 
         private void CloseApp(object sender, RoutedEventArgs e)
@@ -33,7 +34,7 @@ namespace Chat.client
 
         private void MakeLogFile()
         {
-
+            File.Create("chatlog.txt");
         }
     }
 }
