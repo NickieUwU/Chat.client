@@ -33,7 +33,13 @@
                  TextWrapping="Wrap" 
                  VerticalAlignment="Center" 
                  Width="600" 
-                Grid.ColumnSpan="6" 
-                Grid.Column="1"/>
+                 Grid.ColumnSpan="6" 
+                 Grid.Column="1"/>
+        <TextBox Name="txtPort"
+            HorizontalAlignment="Center" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Center" 
+            Width="100" 
+            Grid.Column="3" RenderTransformOrigin="0.5,0.5"/>
     </Grid>
 </Window>
