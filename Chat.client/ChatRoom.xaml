@@ -27,5 +27,13 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+        <TextBox Name="txtNewMsg"
+                 HorizontalAlignment="Left" 
+                 Grid.Row="7" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Center" 
+                 Width="600" 
+                Grid.ColumnSpan="6" 
+                Grid.Column="1"/>
     </Grid>
 </Window>
