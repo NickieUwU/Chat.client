@@ -41,5 +41,10 @@
             VerticalAlignment="Center" 
             Width="100" 
             Grid.Column="3" RenderTransformOrigin="0.5,0.5"/>
+        <Button Name="btnConnect"
+                Content="Connect"
+                VerticalContentAlignment="Center"
+                Grid.Column="4" 
+                Margin="10,18,10,18"/>
     </Grid>
 </Window>

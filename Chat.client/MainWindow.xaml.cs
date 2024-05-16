@@ -21,6 +21,7 @@ namespace Chat.client
     /// </summary>
     public partial class MainWindow : Window
     {
+        string con_string = @"Data Source=DESKTOP-LKC2C9H\TEW_SQLEXPRESS;Initial Catalog=Chat;Integrated Security=True";
         public MainWindow()
         {
             InitializeComponent();
@@ -35,6 +36,14 @@ namespace Chat.client
         private void MakeLogFile()
         {
             File.Create("chatlog.txt");
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            //temp login
+            ChatRoom cr = new();
+            cr.Show();
+            this.Close();
         }
     }
 }
