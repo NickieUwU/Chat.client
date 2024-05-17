@@ -46,5 +46,12 @@
                 VerticalContentAlignment="Center"
                 Grid.Column="4" 
                 Margin="10,18,10,18"/>
+        <Button Grid.Column="7" 
+                Content="Send" 
+                HorizontalAlignment="Center" 
+                Grid.Row="7" 
+                VerticalAlignment="Center"
+                Height="18" 
+                Width="62" Click="Button_Click"/>
     </Grid>
 </Window>
