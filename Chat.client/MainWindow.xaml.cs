@@ -38,7 +38,7 @@ namespace Chat.client
             File.Create("chatlog.txt");
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             //temp login
             ChatRoom cr = new();
