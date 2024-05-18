@@ -27,9 +27,9 @@ namespace Chat.client
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        async private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            await ServerConnect.connect("text");
         }
     }
 }
