@@ -19,7 +19,7 @@ namespace Chat.server
             {
                 try
                 {
-                    Uri uri = new Uri("ws://");
+                    Uri uri = new Uri("ws://localhost:7000");
                     await client.ConnectAsync(uri,  CancellationToken.None);
                     MessageBox.Show("Client connected!");
                 }
