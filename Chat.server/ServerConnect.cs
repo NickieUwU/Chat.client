@@ -6,14 +6,28 @@ using System.Threading.Tasks;
 using System.Net.WebSockets;
 using System.Threading;
 using System.Windows.Forms;
+using System.Runtime.CompilerServices;
+using System.Net.Http;
 
 namespace Chat.server
 {
     public static class ServerConnect
     {
-        public static void connect(string input, Action<string> onMessageReceived)
+        public static async Task connect()
         {
-            
+            using(ClientWebSocket client = new())
+            {
+                try
+                {
+                    Uri uri = new Uri("ws://");
+                    await client.ConnectAsync(uri,  CancellationToken.None);
+                    MessageBox.Show("Client connected!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                } 
+            }
         }
     }
 }

@@ -35,5 +35,10 @@ namespace Chat.client
 
             }
         }
+
+        private async void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            await ServerConnect.connect();
+        }
     }
 }

@@ -5,7 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Chat.client"
         mc:Ignorable="d"
-        Title="ChatRoom" Height="450" Width="800" Background="#36393e" ResizeMode="NoResize">
+        Title="ChatRoom" 
+        Height="450" 
+        Width="800" 
+        Background="#36393e" 
+        ResizeMode="NoResize"
+        Loaded="Window_Loaded">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
