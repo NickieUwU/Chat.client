@@ -27,18 +27,13 @@ namespace Chat.client
             InitializeComponent();
         }
 
-        private async void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             string messageToSend = txtNewMsg.Text;
             if (!string.IsNullOrEmpty(messageToSend))
             {
-                await ServerConnect.connect(messageToSend, OnMessageReceived);
-            }
-        }
 
-        private void OnMessageReceived(string message)
-        {
-            Dispatcher.Invoke(() => txtOutput.AppendText($"{message}\n"));
+            }
         }
     }
 }
