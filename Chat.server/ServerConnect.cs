@@ -29,5 +29,19 @@ namespace Chat.server
                 } 
             }
         }
+        public static async Task send(string message)
+        {
+            using(ClientWebSocket client = new())
+            {
+                try
+                {
+                    
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
     }
 }
